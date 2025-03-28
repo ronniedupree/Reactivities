@@ -22,7 +22,7 @@ try
     var context = services.GetRequiredService<AppDbContext>();
     await context.Database.MigrateAsync();
     await DbInitializer.SeedData(context);
-}
+}git
 catch (Exception e)
 {
     var logger = services.GetRequiredService<ILogger<Program>>();
